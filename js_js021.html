@@ -10,18 +10,33 @@
       this.usermat = math;
       this.usereng = english;
       this.usersci = science;
-
+    /*
       this.getSum = function () {
         return this.userkor + this.usermat + this.usereng + this.usersci;
       };
-      
+
+      // method
       this.getAverage = function () {
         return this.getSum() / 4;
       };
       this.toString = function () {
       return  this.username + '\t' + this.getSum() + '\t' + this.getAverage();
       };
+      */
     };
+    // method
+    //prototype
+    Student.prototype.getSum = function () {
+      return this.userkor + this.usermat + this.usereng + this.usersci;
+    };
+
+    Student.prototype.getAverage = function () {
+      return this.getSum() / 4;
+    };
+    Student.prototype.toString = function () {
+    return  this.username + '\t' + this.getSum() + '\t' + this.getAverage();
+   };
+
     //  var student = new Student('Lilian',85,90,80,85);
     // student information - array
 
